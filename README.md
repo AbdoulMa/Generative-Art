@@ -10,7 +10,7 @@ ___
     <a href="random_rect.R"><img src="Graphics/random_rect.png"></a>
 </div>
 
-### Silk
+### Silk by [Antonio Sánchez Chinchón](https://twitter.com/aschinchon)
 
 ___
 
