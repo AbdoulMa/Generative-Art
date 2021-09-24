@@ -82,3 +82,21 @@ ggplot(aes(vx,y , xend = vxend, yend = yend)) +
   )
 
 ggsave("Graphics/crossed_lines.png", width = 6, height = 6, device = ragg::agg_png, dpi = 320)
+
+
+# Rectangles --------------------------------------------------------------
+height <- 250
+width <- 250
+
+rects_df <- cross_df(.l = list(x = seq(9, width, by = 20),y = seq(9, height, by = 20), d = seq(18, 1, by = -4)))
+
+rects_df %>% 
+  ggplot(aes(xmin = x, ymin = y, xmax = x + d, ymax = y + d)) + 
+  geom_rect(color = "#01FF70", fill =NA, size = .5) +
+  coord_fixed()  + 
+  theme_void() + 
+  theme(
+    plot.background = element_rect(fill = "white", color = NA)
+  )
+
+ggsave("Graphics/looped_rects.png", width = 6, height = 6, device = ragg::agg_png, dpi = 320)
