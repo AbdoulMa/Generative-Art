@@ -16,8 +16,8 @@ lines_stripes <- lines_stripes %>%
 lines_stripes %>% 
   ggplot(aes(x,y , xend = xend, yend = yend)) + 
   geom_segment(size = 1.5, color = "#111111") + 
-  xlim(c(15,85)) + 
-  ylim(c(15,85)) + 
+  xlim(c(0,100)) + 
+  ylim(c(0,100)) + 
   coord_fixed() + 
   theme_void() + 
   theme(
@@ -43,8 +43,8 @@ lines_stripes <- lines_stripes %>%
 lines_stripes %>% 
   ggplot(aes(x,y , xend = xend, yend = yend)) + 
   geom_segment(size = 1.5, color = "#111111") + 
-  xlim(c(15,90)) + 
-  ylim(c(15,90)) + 
+  xlim(c(0,105)) + 
+  ylim(c(0,105)) + 
   coord_fixed() + 
   theme_void() + 
   theme(
