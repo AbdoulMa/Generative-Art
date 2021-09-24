@@ -92,7 +92,7 @@ rects_df <- cross_df(.l = list(x = seq(9, width, by = 20),y = seq(9, height, by 
 
 rects_df %>% 
   ggplot(aes(xmin = x, ymin = y, xmax = x + d, ymax = y + d)) + 
-  geom_rect(color = "#01FF70", fill =NA, size = .5) +
+  geom_rect(color = "#111111", fill =NA, size = .5) +
   coord_fixed()  + 
   theme_void() + 
   theme(
