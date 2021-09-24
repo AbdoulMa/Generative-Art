@@ -15,8 +15,10 @@ squares_df <- tibble(
 squares_df %>% 
   ggplot(aes(xmin = xmin, xmax = xmax, ymin= ymin, ymax = ymax)) + 
   geom_rect(aes(fill = fill), color ="black") + 
+  xlim(c(-2,11)) +
+  ylim(c(-2,11)) +
   coord_fixed() + 
-  theme_void() + 
+  theme_void() +
   scale_fill_identity(guide = "none") + 
   theme(
     plot.margin  = margin(30),
